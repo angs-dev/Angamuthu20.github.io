@@ -1,6 +1,6 @@
 import { render } from 'react-dom';
 import * as React from 'react';
-import { ScheduleComponent, Day, Week, TimelineViews, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
+import { ScheduleComponent, Day, Week, TimelineViews, Inject} from '@syncfusion/ej2-react-schedule';
 import { applyCategoryColor } from './helper';
 
 import { extend } from '@syncfusion/ej2-base';
@@ -8,9 +8,7 @@ import { SampleBase } from './sample-base';
 import * as dataSource from './datasource.json';
 import moment from 'moment';
 
-
-
-export class DayHourLimit extends SampleBase {
+export class Calender extends SampleBase {
     constructor() {
         super(...arguments);
         this.data = extend([], dataSource.employeeEventData, null, true);
@@ -39,7 +37,7 @@ export class DayHourLimit extends SampleBase {
         <div className='col-lg-9 control-section'>
           <div className='control-wrapper'>
             <ScheduleComponent width='100%' height='100%' ref={schedule => this.scheduleObj = schedule} startHour='08:00' endHour='20:00' selectedDate={new Date(2018, 1, 15)} eventSettings={{ dataSource: this.data }} workHours={{ highlight: false }} eventRendered={this.onEventRendered.bind(this)}>
-              <Inject services={[Day, Week, TimelineViews, Resize, DragAndDrop]}/>
+              <Inject services={[Day, Week, TimelineViews]}/>
             </ScheduleComponent>
           </div>
         </div>
@@ -47,4 +45,4 @@ export class DayHourLimit extends SampleBase {
     }
 }
 
-render(<DayHourLimit />, document.getElementById('sample'));
+render(<Calender />, document.getElementById('sample'));
