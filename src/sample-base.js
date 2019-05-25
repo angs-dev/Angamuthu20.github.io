@@ -4,6 +4,7 @@ enableRipple(true);
 
     export class SampleBase extends React.PureComponent {
         rendereComplete() {
+            /**custom render complete function */
         }
         componentDidMount() {
             setTimeout(() => {
