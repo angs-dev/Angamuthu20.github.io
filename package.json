@@ -39,14 +39,14 @@
     "@syncfusion/ej2-react-treemap": "17.1.48",
     "moment": "^2.24.0",
     "react": "16.8.0",
-    "react-dom": "16.8.0"
+    "react-dom": "16.8.0",
+    "react-scripts": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "reject": "react-scripts eject",
-    "react-scripts": "latest"
+    "reject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
