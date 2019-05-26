@@ -1,9 +1,9 @@
 {
   "name": "event-calendar",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "engines": {
-    "node": "v12.3.1",
+    "node": "12.3.1",
     "npm": "6.9.0"
   },
   "dependencies": {
