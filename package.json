@@ -37,7 +37,7 @@
     "@syncfusion/ej2-react-splitbuttons": "17.1.47",
     "@syncfusion/ej2-react-treegrid": "17.1.48",
     "@syncfusion/ej2-react-treemap": "17.1.48",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "react": "16.8.0",
     "react-dom": "16.8.0",
     "react-scripts": "latest"
